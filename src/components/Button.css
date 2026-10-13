@@ -1,0 +1,77 @@
+/* ── Button Component Styles ── */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-2);
+  font-weight: 600;
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  transition: all var(--tr-base);
+  white-space: nowrap;
+  line-height: 1;
+  text-decoration: none;
+}
+
+/* ── Sizes ── */
+.btn--sm {
+  padding: var(--sp-2) var(--sp-4);
+  font-size: var(--fs-sm);
+}
+
+.btn--md {
+  padding: var(--sp-3) var(--sp-6);
+  font-size: var(--fs-base);
+}
+
+.btn--lg {
+  padding: var(--sp-4) var(--sp-8);
+  font-size: var(--fs-lg);
+}
+
+/* ── Primary (filled purple) ── */
+.btn--primary {
+  background: var(--color-primary);
+  color: var(--color-white);
+  box-shadow: 0 2px 8px rgba(124, 58, 237, 0.25);
+}
+
+.btn--primary:hover {
+  background: var(--color-primary-hover);
+  box-shadow: 0 4px 16px rgba(124, 58, 237, 0.35);
+  transform: translateY(-2px);
+}
+
+.btn--primary:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 4px rgba(124, 58, 237, 0.2);
+}
+
+/* ── Outline (bordered) ── */
+.btn--outline {
+  background: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.btn--outline:hover {
+  background: var(--color-primary-soft);
+  transform: translateY(-2px);
+}
+
+.btn--outline:active {
+  transform: translateY(0);
+}
+
+/* ── Ghost (text-only) ── */
+.btn--ghost {
+  background: transparent;
+  color: var(--color-primary);
+  padding-left: var(--sp-3);
+  padding-right: var(--sp-3);
+}
+
+.btn--ghost:hover {
+  background: var(--color-primary-soft);
+}

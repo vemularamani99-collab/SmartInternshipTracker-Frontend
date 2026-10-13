@@ -1,0 +1,147 @@
+/* ── My Applications Page ── */
+
+.my-applications-page {
+  min-height: calc(100vh - 68px);
+  background: var(--color-bg);
+}
+
+.my-applications-header {
+  padding: var(--sp-12) 0;
+}
+
+/* ── Tabs ── */
+.applications-tabs {
+  display: flex;
+  gap: var(--sp-2);
+  margin-bottom: var(--sp-8);
+  border-bottom: 2px solid var(--color-border);
+  padding-bottom: var(--sp-2);
+  overflow-x: auto;
+}
+
+.app-tab {
+  padding: var(--sp-3) var(--sp-5);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  border-radius: var(--radius-lg);
+  transition: all var(--tr-fast);
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+}
+
+.app-tab:hover {
+  color: var(--color-primary);
+  background: var(--purple-50);
+}
+
+.app-tab--active {
+  color: var(--purple-700);
+  background: var(--purple-100);
+  box-shadow: var(--shadow-xs);
+}
+
+.app-tab__count {
+  font-size: var(--fs-xs);
+  opacity: 0.8;
+}
+
+/* ── Applications Table ── */
+.applications-table-wrapper {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-sm);
+  overflow-x: auto;
+}
+
+.applications-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: var(--fs-sm);
+}
+
+.applications-table th {
+  background: var(--color-bg-alt);
+  padding: var(--sp-4) var(--sp-5);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.applications-table td {
+  padding: var(--sp-5);
+  border-bottom: 1px solid var(--color-border-light);
+  vertical-align: middle;
+}
+
+.applications-table tr:hover {
+  background: #faf9ff;
+}
+
+.app-role-cell strong {
+  display: block;
+  font-size: var(--fs-base);
+  color: var(--color-text);
+  margin-bottom: 2px;
+}
+
+.app-company-sub {
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: var(--fs-xs);
+}
+
+.app-date {
+  color: var(--color-text-secondary);
+  font-size: var(--fs-xs);
+  white-space: nowrap;
+}
+
+.app-stipend {
+  font-weight: 700;
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+.app-feedback-cell {
+  max-width: 320px;
+}
+
+.app-feedback-text {
+  font-size: var(--fs-xs);
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+  background: var(--color-bg-alt);
+  padding: var(--sp-2) var(--sp-3);
+  border-radius: var(--radius-md);
+  margin: 0;
+}
+
+.app-feedback-none {
+  font-size: var(--fs-xs);
+  color: var(--color-text-light);
+  font-style: italic;
+}
+
+.app-withdraw-btn {
+  color: var(--color-danger) !important;
+  font-size: var(--fs-xs) !important;
+}
+
+.app-withdraw-btn:hover {
+  background: #fee2e2 !important;
+}
+
+@media (max-width: 768px) {
+  .applications-table th,
+  .applications-table td {
+    padding: var(--sp-3);
+  }
+}

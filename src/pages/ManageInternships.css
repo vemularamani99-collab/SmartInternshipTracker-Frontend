@@ -1,0 +1,87 @@
+/* ── Manage Internships Styles ── */
+
+.manage-internships-page {
+  min-height: calc(100vh - 68px);
+  background: var(--color-bg);
+}
+
+.manage-internships-header {
+  padding: var(--sp-12) 0;
+}
+
+.manage-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--sp-4);
+}
+
+.manage-header-actions {
+  display: flex;
+  gap: var(--sp-3);
+  flex-wrap: wrap;
+}
+
+.manage-controls-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--sp-8);
+  flex-wrap: wrap;
+  gap: var(--sp-4);
+}
+
+.manage-listings-counter {
+  font-size: var(--fs-sm);
+  color: var(--color-text-secondary);
+}
+
+.manage-location-tag {
+  font-size: var(--fs-xs);
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+}
+
+.manage-applicants-badge {
+  display: inline-block;
+  background: var(--purple-50);
+  color: var(--purple-800);
+  border: 1px solid var(--purple-200);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+}
+
+.manage-tags-list {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+/* ── Modal Grid & Mobile Responsiveness ── */
+.manage-modal-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-4);
+}
+
+@media (max-width: 680px) {
+  .manage-modal-grid {
+    grid-template-columns: 1fr;
+    gap: var(--sp-3);
+  }
+
+  .manage-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .manage-controls-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+

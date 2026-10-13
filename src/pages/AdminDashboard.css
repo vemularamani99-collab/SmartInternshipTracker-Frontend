@@ -1,0 +1,182 @@
+/* ── Admin Dashboard Styles ── */
+
+.admin-dashboard {
+  padding: var(--sp-8) 0 var(--sp-20);
+  background: var(--color-bg-alt);
+  min-height: calc(100vh - 68px);
+}
+
+.admin-welcome {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-2xl);
+  padding: var(--sp-8) var(--sp-10);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: var(--sp-8);
+  flex-wrap: wrap;
+  gap: var(--sp-4);
+}
+
+.admin-welcome__title {
+  font-size: var(--fs-3xl);
+  font-weight: 800;
+  color: var(--color-text);
+  margin-bottom: 2px;
+}
+
+.admin-welcome__sub {
+  color: var(--color-text-secondary);
+  font-size: var(--fs-sm);
+}
+
+.admin-welcome__actions {
+  display: flex;
+  gap: var(--sp-3);
+  flex-wrap: wrap;
+}
+
+/* ── Queue Card ── */
+.admin-queue-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-2xl);
+  padding: var(--sp-8);
+  box-shadow: var(--shadow-sm);
+}
+
+.admin-queue-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--sp-6);
+  flex-wrap: wrap;
+  gap: var(--sp-4);
+}
+
+.admin-queue-controls {
+  display: flex;
+  gap: var(--sp-3);
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.admin-search-input {
+  padding: 0.5rem var(--sp-3);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-size: var(--fs-sm);
+  font-family: inherit;
+  outline: none;
+  width: 200px;
+}
+
+.admin-search-input:focus {
+  border-color: var(--purple-500);
+}
+
+.admin-select {
+  padding: 0.5rem var(--sp-3);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-size: var(--fs-sm);
+  font-family: inherit;
+  background: var(--color-white);
+  outline: none;
+}
+
+.admin-select:focus {
+  border-color: var(--purple-500);
+}
+
+/* ── Candidate Cell ── */
+.admin-candidate-cell strong {
+  display: block;
+  font-size: var(--fs-sm);
+  color: var(--color-text);
+}
+
+.admin-candidate-email {
+  display: block;
+  font-size: var(--fs-xs);
+  color: var(--color-text-secondary);
+}
+
+.admin-resume-tag {
+  display: inline-block;
+  font-size: 11px;
+  background: var(--purple-50);
+  color: var(--purple-700);
+  padding: 1px 6px;
+  border-radius: var(--radius-sm);
+  margin-top: 3px;
+}
+
+/* ── Feedback Display & Editor ── */
+.admin-feedback-display {
+  cursor: pointer;
+  position: relative;
+}
+
+.admin-feedback-display:hover .admin-feedback-edit-hint {
+  opacity: 1;
+}
+
+.admin-feedback-edit-hint {
+  font-size: 10px;
+  color: var(--purple-600);
+  font-weight: 600;
+  margin-top: 2px;
+  display: block;
+  opacity: 0.6;
+}
+
+/* ── Quick Decision Buttons ── */
+.admin-status-actions {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.admin-action-btn {
+  padding: 4px 8px;
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all var(--tr-fast);
+  border: 1px solid transparent;
+}
+
+.admin-action-btn--accept {
+  background: #dcfce7;
+  color: #15803d;
+  border-color: #86efac;
+}
+
+.admin-action-btn--accept:hover {
+  background: #bbf7d0;
+}
+
+.admin-action-btn--review {
+  background: #fef3c7;
+  color: #b45309;
+  border-color: #fde68a;
+}
+
+.admin-action-btn--review:hover {
+  background: #fde68a;
+}
+
+.admin-action-btn--reject {
+  background: #fee2e2;
+  color: #b91c1c;
+  border-color: #fca5a5;
+}
+
+.admin-action-btn--reject:hover {
+  background: #fecaca;
+}
